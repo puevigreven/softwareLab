@@ -9,7 +9,7 @@ class Medicines(models.Model):
 	expiry_date = models.DateTimeField(default=datetime.now, blank=True)
 	price = models.IntegerField(default=0)
 	quantity = models.IntegerField(default=0)
-	refill = models.BooleanField(default=True)
+	refill = models.BooleanField(default=False)
 	
 	def __unicode__(self):
 		return self.medicine_name
